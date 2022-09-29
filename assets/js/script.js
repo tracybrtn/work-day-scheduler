@@ -8,9 +8,18 @@ $(document).ready(function () {
     //saving information into local storage
     $(".saveBtn").on("click", function () {
         console.log("button clicked");
+        
+        //get nearby values in jquery
+        console.log(this);
+        var text = $(this).siblings(".description").val();
+        var time = $(this).parent().attr("id");
 
-        //save time in which it was saved
-        //save text content
+        console.log(time);
+        console.log(text);
+
+        // set time and text on local storage
+        localStorage.setItem(time,text);
+
     })
 });
     
