@@ -20,16 +20,12 @@ $(document).ready(function () {
     function timeTracker() {
         //check what time it is
         var currentTime = moment().hour()
-        console.log(currentTime);
 
         //loop
         $(".time-block").each(function () {
             var timeBlock = parseInt($(this).attr("id").split("00"))
-            console.log(timeBlock)
-            console.log(currentTime)
 
             //Add or remove classes depending on time
-
             // if current time is greater than time block then give it past class
             if (timeBlock < currentTime) {
                 $(this).removeClass("future");

@@ -2,7 +2,7 @@
   --primary-color: #565654;
   --secondary-color: #a4c3f2;
   --tertiary-color: #f8fabf;
-  --quaternary-color: #B6E388;
+  --quaternary-color: #74a5f0;
   --light-color: #fdfafa;
 }
 
@@ -28,7 +28,6 @@ body {
 .description{
   white-space: pre-wrap;
 }
-
 
 /*TIME BLOCKS START HERE*/
 textarea {
@@ -68,27 +67,30 @@ textarea {
 .past {
   background-color: #e5e2e2;
   border-radius: 15px;
-  color: white;
+  color: var(--light-color);
 }
 
 .present {
   background-color: #fa6d65;
   border-radius: 15px;
-  color: white;
+  color: var(--light-color);
 }
 
 .future {
   background-color: #7ced7c;
   border-radius: 15px;
-  color: white;
+  color: var(--light-color);
 }
 
 /*TIME BLOCKS END*/
 
+/*Media Queries */
 @media screen and (min-width: 720px) {
   .time-block{
     flex-direction: row;
     margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .hour {
@@ -114,7 +116,7 @@ textarea {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 0;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--light-color);
     flex-grow: 1;
   }
   
@@ -122,5 +124,4 @@ textarea {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
-
 }
