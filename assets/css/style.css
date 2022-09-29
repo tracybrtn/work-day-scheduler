@@ -84,6 +84,16 @@ textarea {
 
 /*TIME BLOCKS END*/
 
+/*Footer*/
+footer {
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--quaternary-color);
+}
+
 /*Media Queries */
 @media screen and (min-width: 720px) {
   .time-block{
