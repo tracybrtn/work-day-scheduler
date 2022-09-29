@@ -30,9 +30,9 @@ body {
 }
 
 
-/*Time Blocks*/
+/*TIME BLOCKS START HERE*/
 textarea {
-  background: var(--light-color);
+  background-color: transparent;
   border: none;
   resize: none;
   color: var(--primary-color);
@@ -61,34 +61,29 @@ textarea {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--light-color);
 }
 
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
-
+/*Hourly changes*/
 .past {
-  background-color: #d3d3d3;
+  background-color: #e5e2e2;
+  border-radius: 15px;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #fa6d65;
+  border-radius: 15px;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #7ced7c;
+  border-radius: 15px;
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
-}
+/*TIME BLOCKS END*/
 
 @media screen and (min-width: 720px) {
   .time-block{
@@ -114,7 +109,7 @@ textarea {
   }
   
   .saveBtn {
-    border: 1px solid var(--primary-color);
+    border-left: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 0;
@@ -123,4 +118,9 @@ textarea {
     flex-grow: 1;
   }
   
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+
 }
